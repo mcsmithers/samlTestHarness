@@ -18,6 +18,7 @@
 *.sublime-workspace
 
 # IDE - VSCode
+.\testHarness\.vscode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
