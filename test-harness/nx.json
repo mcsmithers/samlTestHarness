@@ -1,0 +1,36 @@
+{
+  "npmScope": "test-harness",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "test-harness-e2e": {
+      "tags": []
+    },
+    "test-harness": {
+      "tags": []
+    },
+    "dashboard-e2e": {
+      "tags": []
+    },
+    "dashboard": {
+      "tags": []
+    },
+    "material": {
+      "tags": []
+    },
+    "core-data": {
+      "tags": []
+    },
+    "ui-login": {
+      "tags": []
+    },
+    "ui-toolbar": {
+      "tags": []
+    }
+  }
+}
