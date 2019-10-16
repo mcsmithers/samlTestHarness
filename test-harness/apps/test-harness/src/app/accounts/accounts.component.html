@@ -1,1 +1,49 @@
-<p>accounts works!</p>
+<div class="container">
+        <!-- ACCOUNTS LIST -->
+        <div class="col-50">
+          <mat-card>
+            <mat-card-header>
+              <mat-card-title>
+                <h1>Accounts</h1>
+              </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+               <mat-list>
+                <mat-list-item (click)="selectAccount(account)" *ngFor="let account of accounts">
+                  <h3 [style.color]=primaryColor mat-line>
+                    {{account.title}}
+                  </h3>
+                  <p mat-line>
+                    {{account.details}}
+                  </p>
+                  <button mat-icon-button>
+                    <mat-icon>close</mat-icon>
+                  </button>
+                </mat-list-item>
+              </mat-list>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <!-- ACCOUNT DETAILS -->
+        <div class="col-50">
+          <mat-card>
+            <mat-card-header>
+              <mat-card-title>
+                <h1>
+                  <span *ngIf="selectedAccount else elseBlock">{{selectedAccount?.title}}</span>
+                  <ng-template #elseBLock>Select an account</ng-template>
+                </h1>
+              </mat-card-title>
+            </mat-card-header>
+            <form>
+              <mat-card-content>
+                  {{selectAccount | json}}
+              </mat-card-content>
+              <mat-card-actions>
+                <button type="submit" mat-button color="primary">Save</button>
+                <button type="button" mat-button (click)="cancel()" >Cancel</button>
+              </mat-card-actions>
+            </form>
+          </mat-card>
+        </div>
+      </div>
