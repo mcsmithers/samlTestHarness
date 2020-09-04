@@ -43,7 +43,7 @@
     "core-js": "^2.5.4",
     "hammerjs": "^2.0.8",
     "rxjs": "~6.4.0",
-    "saml2-js": "^2.0.3",
+    "saml2-js": "^2.0.5",
     "zone.js": "^0.9.1"
   },
   "devDependencies": {
